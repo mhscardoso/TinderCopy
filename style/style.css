@@ -18,6 +18,7 @@ body {
 
 .principal {
     width: 72vw;
+    height: 100vh;
     background-color: rgb(235, 235, 235);
     position: relative;
 }
@@ -229,10 +230,11 @@ body {
     transform: translate(-50%, 0);
     bottom: 7vh;
     margin: auto;
-    font-size: 9px;
+    font-size: 0.6vw;
     font-weight: bold;
     align-items: center;
     text-align: left;
+    width: auto;
 }
 
 .first {
