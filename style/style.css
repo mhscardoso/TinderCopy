@@ -19,20 +19,24 @@ body {
 .principal {
     width: 72vw;
     background-color: rgb(235, 235, 235);
+    position: relative;
 }
 
 .top_bar {
+    position: relative;
     display: flex;
     background: linear-gradient(to right, #fd297b 0%, #ff655b 100%);
     height: 12vh;
     width: 100%;
+    align-items: center;
 }
 
 .bar_elements {
     display: flex;
-    position: relative;
+    position: absolute;
+    max-width: 300px;
+    left: 10px;
     padding: 0px 10px 0px 0px;
-    right: 43px;
     margin: auto;
     align-items: center;
     background-color: #f12a76;
@@ -40,11 +44,25 @@ body {
     border-radius: 25px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
+    text-align: center;
 }
 
 
 .bar_elements_bag {
-    position: relative;
+    position: absolute;
+    right: 90px;
+    height: 40px;
+    display: flex;
+    margin: 5px;
+    padding: 2px 8px 2px 8px;
+    align-items: center;
+    background-color: #c5552134;
+    color: white;
+    border-radius: 25px;
+}
+
+.bar_elements_shield {
+    position: absolute;
     right: 20px;
     height: 40px;
     display: flex;
@@ -96,6 +114,9 @@ body {
 .main_photo {
     width: 300px;
     height: 350px;
+    position:absolute;
+    left: 0;
+    right: 0;
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -116,15 +137,19 @@ body {
 
 
 .option {
-    background-color: black;
     width: 270px;
     height: 80px;
     border-radius: 0px 0px 5px 5px;
     position: relative;
-    bottom: 222px;
+    bottom: 208px;
     display: flex;
     align-items: center;
     box-shadow: 0 2px 0px 0 rgba(136, 136, 136, 0.77);
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, 
+                                    rgb(0, 0, 0) 80%,
+                                    rgba(0, 0, 0, 0.384) 100%
+                                    );
 
 }
 
@@ -147,13 +172,6 @@ body {
     color: white;
     padding: 0px 0px 0px 10px;
     align-items: center;
-    background:rgb(2, 0, 36);
-    background:rgb(2, 0, 36);
-    background: linear-gradient(180deg,
-                rgba(0, 0, 0, 0.7) 0%,
-                rgba(35, 34, 65, 0) 0%,
-                rgba(0, 0, 0, 0.1) 52%
-                );
     font-weight: 700;
     letter-spacing: 0.5px;
     font-size: 13px;
@@ -205,12 +223,16 @@ body {
 
 .final {
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0px 0px 0px 110px;
-    font-size: 11px;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, 0);
+    bottom: 7vh;
+    margin: auto;
+    font-size: 9px;
     font-weight: bold;
     align-items: center;
+    text-align: left;
 }
 
 .first {
@@ -221,7 +243,7 @@ body {
 }
 
 .fimgs {
-    padding: 0px 10px 0px 15px;
+    margin: 0px 3px 0px 0px;
 }
 
 .last {
@@ -231,3 +253,7 @@ body {
     border-radius: 4px;
 }
 
+
+.msg {
+    padding: 0px 20px 0px 0px;
+}
